@@ -18,14 +18,14 @@ with open('inputs/day5_test.txt') as file:
         dest, src, amount = list(map(int, x.split()))
         maps[map_idx].append((dest, src, amount))
 
-# for val in range(79000000,80000000):
-#     new = val
-#     for map_idx in range(7,0,-1):
-#         for dest, src, amount in maps[map_idx]:
-#             if dest <= new < dest + amount:
-#                 new = src + (new - dest)
-#                 break
-#     for start, amount in seeds:
-#         if start <= new < start + amount:
-#             print(val)
-#             exit()
+for val in range(79000000,80000000):
+    new = val
+    for map_idx in range(7,0,-1):
+        for dest, src, amount in maps[map_idx]:
+            if dest <= new < dest + amount:
+                new = src + (new - dest)
+                break
+    for start, amount in seeds:
+        if start <= new < start + amount:
+            print(val)
+            exit()
