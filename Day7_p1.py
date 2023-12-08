@@ -37,6 +37,6 @@ g = sorted(hands, key=lambda x: find_val(x[0]), reverse=True)
 
 ret_sum = sum([int(x[1]) * (i+1) for i,x in enumerate(g)])
 
-print(ret_sum, 241344943, ret_sum == 241344943)
+print(ret_sum)
 
 

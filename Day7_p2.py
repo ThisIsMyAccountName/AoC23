@@ -52,7 +52,6 @@ def jokers(line):
 			new_hand += max(cards, key=cards.get)
 		else:
 			new_hand += i
-	print(new_hand, cards)
 	return new_hand, val
 		
 hands = [jokers(hand) for hand in hands]
